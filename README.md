@@ -1,2 +1,0 @@
-# whitepaper
-Tribute White Paper
