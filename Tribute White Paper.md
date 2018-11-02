@@ -161,6 +161,7 @@ Reserve funds created by organizations using Tribute are protected from attacks 
 Contributive tokens can be customized in order to foster particular behaviors. Programmatic in nature, they introduce endless possibilities for driving and coordinating the action of contributing agents in a network. They are  implemented as smart contracts, so as to gain from their transparency, enforceability, and resistance to tampering. As examples, here are three classes of smart incentives that illustrate how they can be used to serve targeted purposes: Pioneer Incentive, Gratitude Token and Retention Bonus.
 
 Token type | Pioneer Incentive | Gratitude Token | Retention Bonus
+ --- | --- | --- | ---
 Main objective | Attract early contributors, offset the risk of not being adequately compensated | Foster peer collaboration by facilitating internal, mutual rewards among contributors | Retaining trusted independent contributors, fostering long-term cooperation
 Mechanism | Holders get compensated in extra tokens when the value of their token falls below a defined threshold | Tokens obtain value only when they are transferred to another holder, they have no intrinsic value for the first holder | A reward multiplier is applied while allocating tokens when given conditions are met, eg. a minimal amount of contributions over time
 Incentive regulation | Linear or progressive compensation percentage | Defined minimum share of tokens with this attribute | Defined minimum time and percentage of bonus, categories of eligible contributors
@@ -214,26 +215,19 @@ ILOT uses two key patterns:
 -	Event sourcing as an event-centric persistence layer, allowing the modelling of objects as a sequence of events
 
 Based on these patterns, ILOT generates a structured event datastream interpretable across multiple environments. This approach benefits Tribute in many ways:
+- **Readability** - Code execution strictly complies with the business logic (state changes and permissions) expressed in a declarative format
 
-| **Readability** | Code execution strictly |
-| **Readability** | Code execution strictly |
+- **Security** - The business logic is expressed as the expected results of events, rather than code, making it easier for non-technical domain experts to specify the requirements
 
-|  	| Y1 | Y2 | Y3 | Y4 | Y5 | Y6 | Y7 | Y8 | Y9 | Y10 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| RWR total (in thousands) | 112 | 958 | 4,543 | 16,390 | 47,686 |  113,893 | 240,961 | 463,522 | 820,956 | 1,354,260 |
+- **Readability** - The business logic is expressed as the expected results of events, rather than code, making it easier for non-technical domain experts to specify the requirements
 
-| Readability | abc | def |
-| --- | --- | --- |
-| ddd | ded | zdz |
+- **Universality** - Business rules can be compiled into any language and executed in any target environment
 
-| **Readability** | Code execution strictly complies with the business logic (state changes and permissions) expressed in a declarative format |
+- **Flexibility & scalability** - Multiple execution environments can be combined in order to leverage their specific features, while ensuring cross-environment consistency
 
-| **Security** | The business logic is expressed as the expected results of events, rather than code, making it easier for non-technical domain experts to specify the requirements |
-| **Readability** | The business logic is expressed as the expected results of events, rather than code, making it easier for non-technical domain experts to specify the requirements |
-| **Universality** | Business rules can be compiled into any language and executed in any target environment |
-| **Flexibility & scalability** | Multiple execution environments can be combined in order to leverage their specific features, while ensuring cross-environment consistency |
-| **Full audit logging** | All actions are signed, stored and accessible, enabling end-to-end traceablity across environments |
-| **Extensibility** | Business logic can be extended by simply adding new actions, rules, or notifications, without having to modify existing code |
+- **Full audit logging** - All actions are signed, stored and accessible, enabling end-to-end traceablity across environments
+
+- **Extensibility** - Business logic can be extended by simply adding new actions, rules, or notifications, without having to modify existing code
 
 Based on these patterns, ILOT bridges smart contracts with dynamic Web applications.
 
@@ -249,13 +243,18 @@ The current version of ILOT runs on a traditional Web stack, but it has been des
 Contributive tokens may benefit any organization that create value through collaborating with networked individuals, whether those organizations are centralized - as traditional firms -, democratically governed - as cooperatives -, or decentralized - as collectives of self-employed workers or consortiums of independent businesses.
 
 Here are some examples drawn from current or prospect users of the platform:
-
-| Intrapreneurship in large organizations | Achieving a level of engagement comparable to startups led by independent founders, by empowering intrapreneurs to allocate shares of the future value generated by their projects. Aligning the interests of intrapreneurs, internal staff, and advisors and external subcontractors by using a unified rewarding system based on contributive tokens. |
-| Sharing economy marketplaces | Bootstrapping marketplaces by offering a share of the network value to early participants: reference customers, power users, buyers and sellers, referrers, developers, etc. Contributive tokens can be redeemed in kind, as a discount, or in cash. They can also be used as a way to open the governance of the marketplace to the most engaged stakeholders. |
-| Blockchain projects | Attracting a large community of contributors in order to boost a token launch and to amplify the project’s reach once the token is live. Supporting structured initiatives related to product and business development, communication, and community management. Establishing trust based on high level of transparency in the way the community is involved, tasks are achieved and tokens are allocated. |
-| Open Source Software | Nurturing the community of developers and users of the software, by rewarding their contributions with tokens. When a licensing or service business results from the effort of the community, part of the cash flow can be used to compensate the volunteering efforts. Contributive tokens are tangible metrics that can also be used to honor contributors (Open Badges). Tokens granted to users can serve as discount coupons, invitations to conferences, and voting rights on the roadmap. |
-| Incubators and Accelerators | Engaging mentors in sponsorship programs by making their contributions of time, knowledge and networking, tangible and visible. Supporting the long-term involvement of token holders in projects beyond the incubation time by awarding them shares in an equity fund supporting best post-incubation businesses. Introducing tokens to other members in the ecosystem as a tool for incentivizing support to the projects. |
-| Networks of Independent Workers | Fostering network growth by incentivizing members to engage in activities beneficial for the network as a whole, not just for the individual alone. Besides benefitting from transparent rules of engagement, assignment of tasks and split of rewards, token holders can be invited to participate in the decision making regarding the development of the network. |
+##### Intrapreneurship in large organizations
+Achieving a level of engagement comparable to startups led by independent founders, by empowering intrapreneurs to allocate shares of the future value generated by their projects. Aligning the interests of intrapreneurs, internal staff, and advisors and external subcontractors by using a unified rewarding system based on contributive tokens.
+##### Sharing economy marketplaces
+Bootstrapping marketplaces by offering a share of the network value to early participants: reference customers, power users, buyers and sellers, referrers, developers, etc. Contributive tokens can be redeemed in kind, as a discount, or in cash. They can also be used as a way to open the governance of the marketplace to the most engaged stakeholders.
+##### Blockchain projects
+Attracting a large community of contributors in order to boost a token launch and to amplify the project’s reach once the token is live. Supporting structured initiatives related to product and business development, communication, and community management. Establishing trust based on high level of transparency in the way the community is involved, tasks are achieved and tokens are allocated.
+##### Open Source Software
+Nurturing the community of developers and users of the software, by rewarding their contributions with tokens. When a licensing or service business results from the effort of the community, part of the cash flow can be used to compensate the volunteering efforts. Contributive tokens are tangible metrics that can also be used to honor contributors (Open Badges). Tokens granted to users can serve as discount coupons, invitations to conferences, and voting rights on the roadmap.
+##### Incubators and Accelerators
+Engaging mentors in sponsorship programs by making their contributions of time, knowledge and networking, tangible and visible. Supporting the long-term involvement of token holders in projects beyond the incubation time by awarding them shares in an equity fund supporting best post-incubation businesses. Introducing tokens to other members in the ecosystem as a tool for incentivizing support to the projects.
+##### Networks of Independent Workers
+Fostering network growth by incentivizing members to engage in activities beneficial for the network as a whole, not just for the individual alone. Besides benefitting from transparent rules of engagement, assignment of tasks and split of rewards, token holders can be invited to participate in the decision making regarding the development of the network.
 
 # Part II
 # The Tribute Network
@@ -263,8 +262,7 @@ Here are some examples drawn from current or prospect users of the platform:
  
 > “Prosperity came when the fruits of productivity were widely shared; enmity, political turmoil, and even outright warfare were the harvest of rampant inequality. it is obvious hat generosity is the robust
 strategy. ”
-
-Tim O’Reilly, O’Reilly Media
+*Tim O’Reilly, O’Reilly Media*
 
 ## Purpose: a capital pool for the commons
 Digital commons, under the form of free software and open protocols, gave us the Internet and a Cambrian explosion of new contents, products, and services. Creating new businesses has never been so easy nor so cheap, because we benefit from open knowledge and resources, like the proverbial dwarfs standing on the shoulders of giants. But the centralizing power of network effects has reintroduced the dominance of proprietary platforms that tend to extract most economic value through rent-seeking[8].
