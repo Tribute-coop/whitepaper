@@ -218,6 +218,11 @@ Based on these patterns, ILOT generates a structured event datastream interpreta
 | **Readability** | Code execution strictly |
 | **Readability** | Code execution strictly |
 
+|  	| Y1 | Y2 | Y3 | Y4 | Y5 | Y6 | Y7 | Y8 | Y9 | Y10 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| RWR total (in thousands) | 112 | 958 | 4,543 | 16,390 | 47,686 |  113,893 | 240,961 | 463,522 | 820,956 | 1,354,260 |
+
+| Readability | abc | def |
 
 | **Readability** | Code execution strictly complies with the business logic (state changes and permissions) expressed in a declarative format |
 
