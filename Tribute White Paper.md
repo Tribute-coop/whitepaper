@@ -216,6 +216,7 @@ ILOT uses two key patterns:
 Based on these patterns, ILOT generates a structured event datastream interpretable across multiple environments. This approach benefits Tribute in many ways:
 
 | **Readability** | Code execution strictly complies with the business logic (state changes and permissions) expressed in a declarative format |
+
 | **Security** | The business logic is expressed as the expected results of events, rather than code, making it easier for non-technical domain experts to specify the requirements |
 | **Readability** | The business logic is expressed as the expected results of events, rather than code, making it easier for non-technical domain experts to specify the requirements |
 | **Universality** | Business rules can be compiled into any language and executed in any target environment |
