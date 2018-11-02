@@ -197,7 +197,9 @@ When a decision involves a transaction - such as the approval of a contribution 
 
 ## Architecture
 Tribute is based on an hybrid architecture which combines a public blockchain layer and our own event-driven middleware, ILOT.
- 
+
+![alt text](https://github.com/Tribute-coop/whitepaper/blob/master/images/HL%20ILOT%20Arch.png "ILOT Architecture")
+
 The blockchain layer is used to: 
 -	Make token issuance and reserve funds publicly verifiable
 -	Escrow reserve funds so that token holders are the only users authorized to withdraw
